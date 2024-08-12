@@ -9,7 +9,6 @@
     />
     <!-- Point to styles.css -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -29,24 +28,43 @@
   </head>
 
   <body class="bg-success">
-    <div class="container d-flex justify-content-center">
-      <div class="row align-content-center my-3 py-3">
-        <div class="card" id="card" style="height:40vw; width:25vw;">
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="row justify-content-center w-100">
+        <div class="col-auto">
+          <!-- CARD! -->
           <div
-            id="top-left-icon"
-            class="mt-2 ms-2"
-            style="font-size: 8vw;"
-          ></div>
-          <div
-            id="center-number"
-            class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle"
-            style="font-size: 8vw;"
-          ></div>
-          <div
-            id="bottom-right-icon"
-            class="position-absolute bottom-0 end-0 me-4 mb-3"
-            style="font-size: 8vw;"
-          ></div>
+            class="card position-relative"
+            id="card"
+            style="height:35vw; width:24vw;"
+          >
+            <div
+              id="top-left-icon"
+              class="position-absolute top-0 start-0 mt-1 ms-3"
+              style="font-size: 8vw;"
+            ></div>
+            <div
+              id="center-number"
+              class="position-absolute top-50 start-50 translate-middle"
+              style="font-size: 8vw;"
+            ></div>
+            <div
+              id="bottom-right-icon"
+              class="position-absolute bottom-0 end-0 me-3 mb-1"
+              style="font-size: 8vw; transform: rotate(180deg);"
+            ></div>
+          </div>
+          <!-- End card -->
+          <div class="d-flex justify-content-center mt-3">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              onclick="window.location.reload();"
+            >
+              Refresh
+            </button>
+          </div>
         </div>
       </div>
     </div>
